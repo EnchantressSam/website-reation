@@ -46,45 +46,83 @@ nav {
 .menu li a.contacts {
   margin-right: 100px;
 }
-.wrapper{
+.wrapper {
   margin: 0 auto;
   max-width: 1100px;
   width: 100%;
 }
-.intro{
+.intro {
   margin-top: 25px;
   display: flex;
   justify-content: flex-end;
 }
-.intro-img{
+.intro-img {
   background-image: url(img/room.jpg);
-  width: 961px;/*965*/
+  width: 961px; /*965*/
   height: 640px;
 }
-.intro .intro-text{
-    position: absolute;
-    font-size: 62px;
-    right: 750px;
-    top: 220px;
-    color: #4c2761;/*my color*/
+.intro .intro-text {
+  position: absolute;
+  font-size: 62px;
+  right: 750px;
+  top: 220px;
+  color: #4c2761; /*my color*/
 }
-.intro-contacts{
+.intro-contacts {
   background-color: #ffcc01;
   max-width: 590px;
   position: absolute;
-  right: 90px;/*170px*/
-  top: 634px;/*638px*/
+  right: 80px; /*170px*/
+  top: 634px; /*638px*/
   display: flex;
   justify-content: space-between;
   padding: 30px 50px;
 }
-.intro-contacts i{
+.intro-contacts i {
   color: #fff;
   margin-right: 30px;
 }
-.intro-contacts p{
+.intro-contacts p {
   font-size: 18px;
   margin-right: 60px;
+}
+/*section statistics*/
+.stats{
+  display: flex;
+  margin-top: 130px;
+}
+.stats-line{
+  display: flex;
+}
+.stats-text{
+  padding: 40px;
+}
+.stats-text h2{
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+.stats-text p{
+  margin-top: 50px;
+  font-size: 13px;
+  line-height: 27px;
+}
+.square{
+  width: 200px;
+  height: 200px;
+  background-color: #f6f5f4;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.stats-square{
+  font-size: 40px;
+  color: #ffcc01;
+  margin-bottom: 15px;
+}
+.square-text{
+  font-size: 14px;
 }
 
 @media screen and (max-width: 765px) {
@@ -97,39 +135,39 @@ nav {
     width: 100%;
     color: #000000;
     background: #ffcc01;
-    transition: all .1s linear;
+    transition: all 0.1s linear;
   }
-  .toggle:hover{
-      background: #d3a900;
+  .toggle:hover {
+    background: #d3a900;
   }
-  #checkbox-menu:checked + label .touch li{
-      opacity: 1;
-      visibility: visible;
-      transition: all .7s linear;
+  #checkbox-menu:checked + label .touch li {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s linear;
   }
-  #checkbox-menu:checked + label .touch{
-      height: 350px;
+  #checkbox-menu:checked + label .touch {
+    height: 350px;
   }
-  .menu{
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     align-items: center;
-     height: 0;
-     transition: height .3s linear;
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0;
+    transition: height 0.3s linear;
   }
-  .menu li{
-      display: flex;
-      align-items: center;
-      width: 95%;
-      opacity: 0;
-      visibility: hidden;
+  .menu li {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
   }
-  .menu li a{
-      width: 95%;
-      text-align: center;
-      align-self: center;
-      align-content: center;
+  .menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
   }
   .menu li a.logo {
     font-size: 21px;
@@ -138,31 +176,50 @@ nav {
   .menu li a.contacts {
     margin-right: 0;
   }
-  .intro{
+  .intro {
     margin-top: 0;
     display: block;
     max-width: 100%;
   }
-  .intro-img{
-    background-position: bottom 40px right 190px;/*b50 r570 table focus*/
+  .intro-img {
+    background-position: bottom 40px right 190px; /*b50 r570 table focus*/
   }
-  .intro .intro-text{
+  .intro .intro-text {
     position: relative;
     font-size: 35px;
     right: -10px;
     top: 95;
-    }
-  .intro .intro-contacts{
+  }
+  .intro .intro-contacts {
     right: 0;
     top: -60px;
     padding: 20px 10px;
     position: relative;
   }
-  .intro-contacts i{
+  .intro-contacts i {
     margin-right: 10px;
   }
-  .intro-contacts p{
+  .intro-contacts p {
     font-size: 13px;
     margin-right: 0;
+  }
+  .stats{
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .stats-text{
+    padding: 10px;
+  }
+  .stats-text h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .stats-text p{
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .square{
+    height: 140px;
   }
 }
